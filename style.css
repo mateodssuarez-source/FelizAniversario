@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #3b0a57, #6a0dad, #a4508b);
+  color: #f5eaff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #f3d9ff;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.moment {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+  border-left: 4px solid #d8a4ff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.moment:hover {
+  transform: translateY(-6px) scale(1.01);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.moment h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+  color: #f3d9ff;
+}
+
+.moment p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f5eaff;
+}
+
+.final {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(216, 164, 255, 0.25));
+  border-left: 4px solid #ffffff;
+}
+
+/* Imágenes */
+.moment img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.moment img:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.love-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #c77dff, #7b2cbf);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.love-button:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
